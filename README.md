@@ -88,9 +88,15 @@ If there are multiple negative numbers, show all of them in the exception messag
 	git commit -m "commit msg"
 	git push 
 
+	** To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin string_calculator_cmd_line_feature
+    To have this happen automatically for branches without a tracking upstream, see 'push.autoSetupRemote' in 'git help config'.
+
  ###############################################################################################
 
 
+** public git repo with specific branch: 
+https://github.com/gowthamiroyalp/string_calculator_TDD_kata/tree/string_calculator_cmd_line_feature **
 
-
-
+###############################################################################################
