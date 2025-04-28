@@ -3,7 +3,7 @@ class StringCalculator
 	def add(numbers)
 		# puts "numbers are: #{numbers} in addition calculation."
 		return 0 if numbers.empty?
-		return numbers.split('').map(&:to_i).sum
+		return numbers.split(',').map(&:to_i).sum #to_i returns '0' for non integers which is comma
 	end
 
 end

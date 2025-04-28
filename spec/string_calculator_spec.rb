@@ -10,12 +10,16 @@ RSpec.describe StringCalculator do
       expect(calculator.add("")).to eq(0)
     end
 
-    it 'returns sum of numbers only for non empty string' do
-      expect(calculator.add("34er")).to eq(7)
-      expect(calculator.add("32er ")).to eq(5)
-      expect(calculator.add("34er@@")).to eq(7)
-      expect(calculator.add("1,5")).to eq(6)
+    it 'returns the number itself for single number input' do
+      expect(calculator.add("4")).to eq(4)
     end
+
+    it 'returns the sum of numbers with "," seperated values' do
+      expect(calculator.add("4,5")).to eq(9)
+      expect(calculator.add("4,1,2,3,2,3")).to eq(15)
+      expect(calculator.add("23")).to eq(23)
+    end
+
      
   end
 
