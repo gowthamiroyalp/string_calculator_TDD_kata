@@ -1,7 +1,7 @@
 class StringCalculator
 
 	def add(numbers)
-		return 0 if numbers.strip.empty?
+		return 0 if numbers.empty?
 
 		delimiter = [",", "\n"] # Default delimiters
 

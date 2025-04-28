@@ -4,7 +4,6 @@ calculator = StringCalculator.new
 
 puts "Enter numbers to add:"
 input = gets.chomp #String
-#puts input.class #String
 
 begin
   result = calculator.add(input)
