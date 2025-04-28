@@ -20,7 +20,10 @@ RSpec.describe StringCalculator do
       expect(calculator.add("23")).to eq(23)
     end
 
-     
+    it 'handles newlines as delimiters instead of comma, in between numbers' do
+      expect(calculator.add("1\n2,3")).to eq(6)
+    end
+         
   end
 
 end
