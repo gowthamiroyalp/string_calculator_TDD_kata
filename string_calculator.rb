@@ -7,7 +7,7 @@ class StringCalculator
 
 	    if numbers.start_with?("//")
 	      delimiter = numbers[2]
-	      numbers = numbers.split("\n", 2)[1] # remove the first line
+	      numbers = numbers.split("\n", 2)[1] # limit to two substrings on split(), logic is to remove the first line/untill \n
 	      numbers = numbers.split(delimiter)
 	    else
 	      numbers = numbers.split(/[\n,]/)
